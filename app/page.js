@@ -1,10 +1,11 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Headers from "@/components/Headers";
 
 export default function Home() {
   return (
-    <main className="">
-      Hello World
-    </main>
+    <div>
+      <Headers />
+    </div>
   );
 }
