@@ -1,11 +1,12 @@
 import Image from "next/image"
 import React from 'react'
-import { SearchIcon } from "@heroicons/react/outline"
+import { SearchIcon, PlusCircleIcon } from "@heroicons/react/outline"
+import {HomeIcon} from "@heroicons/react/solid";
 
 const Headers = () => {
   return (
         
-    <div className="flex items-center justify-between max-w-6xl">
+    <div className="flex items-center justify-between max-w-6xl mx-4 xl:mx-auto">
         {/* Left */}
         <div className="cursor-pointer h-24 w-24 relative hidden lg:inline-grid">
             <Image src="https://clipart.info/images/ccovers/1522452762Instagram-logo-png-text.png" layout="fill" className="object-contain" />
@@ -23,7 +24,11 @@ const Headers = () => {
         </div>
 
         {/* right */}
-        test
+        <div className="flex items-center space-x-4">
+          <HomeIcon className="hidden md:inline-flex h-6 text-gray-500 cursor-pointer hover:scale-125 transition-transform duration-200 ease-out " />
+          <PlusCircleIcon className="h-6 text-gray-500 cursor-pointer hover:scale-125 transition-transform duration-200 ease-out" />
+          <Image src="" alt="user-image" className="h-10 rounded-full " />
+        </div>
         
     </div>
        
