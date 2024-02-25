@@ -25,7 +25,7 @@ const Posts = () => {
 
         const {id, username, userImg, img, caption} = post;
         return <Post key={id} id={id} username={username} userImg={userImg} img={img} caption={caption} />
-        
+
       })}
     </div>
   )
