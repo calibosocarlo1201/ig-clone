@@ -12,10 +12,10 @@ const Posts = () => {
     },
     {
       id: "2",
-      username: "seigrein",
+      username: "Seigrein",
       userImg: "https://scontent.fmnl8-2.fna.fbcdn.net/v/t39.30808-6/399339771_2089865588016666_459205975921080427_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=9c7eae&_nc_eui2=AeHvCT3_NI2QPThsUriqFoeG7NT6uBAtyMns1Pq4EC3IyWL1XQYey7Qko_SZ3cYqMABr2iF01EvGk0MfzfTYr8_7&_nc_ohc=DSomjWau5LgAX9wpUP4&_nc_ht=scontent.fmnl8-2.fna&oh=00_AfDWQciBj8hFrH9_b3-OuF2SI0qIB6n_hTttkTItt6Leww&oe=65E10602",
       img: "https://images.unsplash.com/photo-1682685796766-0fddd3e480de?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      caption: "What a beautiful sunset."
+      caption: "Mountain Camping."
     }
   ]
 
@@ -24,8 +24,8 @@ const Posts = () => {
       {posts.map(post => {
 
         const {id, username, userImg, img, caption} = post;
-
         return <Post key={id} id={id} username={username} userImg={userImg} img={img} caption={caption} />
+        
       })}
     </div>
   )
